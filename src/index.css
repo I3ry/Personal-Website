@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-exo bg-dark-bg text-text-light leading-relaxed overflow-x-hidden;
+    background-image:
+      radial-gradient(circle at 10% 20%, rgba(11, 25, 55, 0.2) 0%, transparent 20%),
+      radial-gradient(circle at 90% 80%, rgba(57, 20, 80, 0.2) 0%, transparent 20%),
+      linear-gradient(to bottom, #05050c, #0a0a14);
+    background-attachment: fixed;
+  }
+}
+
+/* Grid background pattern */
+.grid-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(20, 20, 40, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 20, 40, 0.3) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Particle effects */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  @apply bg-neon-blue;
+  box-shadow: 0 0 10px theme('colors.neon-blue');
+  animation: float 15s infinite linear;
+}
+
+/* Headshot with background image */
+.headshot {
+  @apply w-80 h-80 rounded-full overflow-hidden relative animate-float;
+  border: 3px solid theme('colors.neon-blue');
+  box-shadow: 0 0 30px theme('colors.neon-blue'), inset 0 0 20px rgba(0, 243, 255, 0.3);
+  background: linear-gradient(135deg, rgba(0, 243, 255, 0.1), rgba(57, 255, 20, 0.1));
+}
+
+.headshot::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/proheadshot.jpeg') center/cover;
+  border-radius: 50%;
+}
+
+.headshot-sm {
+  @apply w-72 h-72;
+  animation: float 7s ease-in-out infinite;
+}
+
+/* Gradient text utility */
+.gradient-text-blue-green {
+  @apply font-orbitron font-bold;
+  background: linear-gradient(90deg, theme('colors.neon-blue'), theme('colors.neon-green'));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-blue-purple {
+  @apply font-orbitron font-bold inline-block;
+  background: linear-gradient(90deg, theme('colors.neon-blue'), theme('colors.neon-purple'));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* CTA button with sweep effect */
+.cta-button {
+  @apply inline-block bg-transparent text-neon-blue py-3.5 px-9 rounded-full no-underline font-semibold text-lg font-orbitron tracking-wider relative overflow-hidden transition-all duration-300;
+  border: 2px solid theme('colors.neon-blue');
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 243, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+.cta-button:hover {
+  background: rgba(0, 243, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px theme('colors.neon-blue');
+}
+
+/* Section title underline */
+.section-title-underline::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, theme('colors.neon-blue'), theme('colors.neon-purple'));
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300;
+  border: 1px solid rgba(0, 243, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 243, 255, 0.1);
+  border-color: rgba(0, 243, 255, 0.3);
+}
+
+/* Detail card left border */
+.detail-card-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: theme('colors.neon-blue');
+}
+
+/* Skills category top border */
+.skills-top-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, theme('colors.neon-blue'), theme('colors.neon-purple'));
+}
+
+/* Timeline styles */
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, theme('colors.neon-blue'), theme('colors.neon-purple'));
+  left: 50%;
+  margin-left: -2px;
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+}
+
+@media (max-width: 992px) {
+  .timeline-line::before {
+    left: 30px;
+  }
+}
+
+/* Timeline arrow */
+.timeline-arrow::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: theme('colors.neon-blue');
+  transform: rotate(45deg);
+  z-index: -1;
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+}
+
+.timeline-arrow-left::before {
+  left: -10px;
+  right: auto;
+}
+
+/* List arrow marker */
+.list-arrow li {
+  @apply mb-3 text-text-light relative;
+  padding-left: 1.5rem;
+}
+
+.list-arrow li::before {
+  content: '\25B9';
+  @apply text-neon-blue absolute;
+  left: 0;
+}
+
+/* Contact info icon */
+.contact-icon {
+  @apply text-2xl mr-5 w-12 h-12 rounded-full flex items-center justify-center text-neon-blue shrink-0;
+  background: rgba(0, 243, 255, 0.1);
+  border: 1px solid theme('colors.neon-blue');
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+}
+
+/* Social link */
+.social-link {
+  @apply flex items-center justify-center w-12 h-12 rounded-full text-xl text-neon-blue transition-all duration-300;
+  background: rgba(0, 243, 255, 0.1);
+  border: 1px solid theme('colors.neon-blue');
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+}
+
+.social-link:hover {
+  @apply bg-neon-blue text-dark-bg;
+  transform: translateY(-5px);
+}
+
+/* Form inputs */
+.form-input {
+  @apply w-full p-4 rounded-lg font-exo text-text-light text-lg transition-all duration-300;
+  background: rgba(20, 25, 40, 0.6);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+}
+
+.form-input:focus {
+  @apply outline-none;
+  border-color: theme('colors.neon-blue');
+  box-shadow: 0 0 0 3px rgba(0, 243, 255, 0.1);
+}
+
+/* Submit button */
+.submit-btn {
+  @apply bg-transparent text-neon-blue py-4 px-10 rounded-full font-semibold cursor-pointer font-orbitron tracking-wider text-lg relative overflow-hidden transition-all duration-300;
+  border: 2px solid theme('colors.neon-blue');
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+}
+
+.submit-btn:hover {
+  background: rgba(0, 243, 255, 0.1);
+  box-shadow: 0 0 25px theme('colors.neon-blue');
+  transform: translateY(-3px);
+}
+
+/* Nav link underline effect */
+.nav-link {
+  @apply text-text-light no-underline font-medium text-lg font-orbitron tracking-wider relative pb-1 transition-all duration-300;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 h-0.5 bg-neon-blue transition-all duration-300;
+  width: 0;
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+}
+
+.nav-link:hover {
+  @apply text-neon-blue;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Contact info underline */
+.contact-title-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  @apply bg-neon-blue;
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+}
