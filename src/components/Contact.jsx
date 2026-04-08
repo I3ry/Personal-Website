@@ -7,10 +7,9 @@ const contactDetails = [
 ]
 
 const socialLinks = [
-  { icon: 'fab fa-linkedin-in', title: 'LinkedIn', href: '#' },
-  { icon: 'fab fa-github', title: 'GitHub', href: '#' },
-  { icon: 'fab fa-twitter', title: 'Twitter', href: '#' },
-  { icon: 'fab fa-instagram', title: 'Instagram', href: '#' },
+  { icon: 'fab fa-linkedin-in', title: 'LinkedIn', href: 'https://www.linkedin.com/in/bryce-dancy-746420281/' },
+  { icon: 'fab fa-github', title: 'GitHub', href: 'https://github.com/I3ry' },
+  { icon: 'fab fa-instagram', title: 'Instagram', href: 'https://www.instagram.com/bryceedancy' },
 ]
 
 function Contact() {
@@ -57,7 +56,7 @@ function Contact() {
             </div>
             <div className="flex gap-5 mt-8">
               {socialLinks.map((s) => (
-                <a key={s.title} href={s.href} title={s.title} className="social-link">
+                <a key={s.title} href={s.href} title={s.title} target="_blank" rel="noopener noreferrer" className="social-link">
                   <i className={s.icon} />
                 </a>
               ))}
