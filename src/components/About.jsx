@@ -2,7 +2,7 @@ const details = [
   {
     icon: 'fas fa-graduation-cap',
     title: 'EDUCATION',
-    lines: ['B.S. Computer Science', 'NC A&T State University', 'GPA: 3.2/4.0'],
+    lines: ['B.S. Computer Science', 'NC A&T State University', 'GPA: 3.23/4.0', 'Expected May 2028'],
   },
   {
     icon: 'fas fa-map-marker-alt',
