@@ -14,7 +14,7 @@ function Footer() {
             BRYCE<span className="text-neon-green">DANCY</span>
           </div>
           <p className="opacity-70 mb-7 text-lg">
-            Computer Science Student | Technology Innovator | Entrepreneur
+            Computer Science Student | Technology Innovator | Cloud Builder
           </p>
           <div className="flex justify-center gap-7 mb-10">
             {footerLinks.map((link) => (

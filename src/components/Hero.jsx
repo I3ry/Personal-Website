@@ -11,7 +11,7 @@ function Hero() {
         <div className="flex flex-col-reverse lg:flex-row items-center gap-16">
           <div className="flex-1 z-[2] text-center lg:text-left">
             <h1 className="gradient-text-blue-green text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight tracking-wider">
-              TECHNOLOGY INNOVATOR & FUTURE ENGINEER
+              TECHNOLOGY INNOVATOR & CLOUD BUILDER
             </h1>
             <p className="text-xl md:text-2xl mb-10 text-text-muted max-w-[600px] mx-auto lg:mx-0">
               Hi, I&apos;m{' '}
