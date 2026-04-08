@@ -1,19 +1,23 @@
 const skillCategories = [
   {
-    title: 'PROGRAMMING LANGUAGES',
-    skills: ['Python', 'Java', 'JavaScript', 'C++', 'HTML/CSS', 'Node.js'],
+    title: 'LANGUAGES',
+    skills: ['Python', 'Java', 'C++', 'JavaScript', 'SQL', 'Bash/Shell Scripting'],
   },
   {
-    title: 'TOOLS & PLATFORMS',
-    skills: ['Google Cloud', 'Microsoft Office', 'Google Workspace', 'Figma', 'Adobe Suite', 'Canva'],
+    title: 'CLOUD & DATA',
+    skills: ['Google Cloud Platform', 'AWS', 'Microsoft Azure', 'REST APIs', 'BigQuery', 'Firebase', 'MySQL', 'Schema Design'],
   },
   {
-    title: 'AI & EMERGING TECH',
-    skills: ['ChatGPT', 'Claude', 'DeepSeek', 'Midjourney', 'AI Integration'],
+    title: 'FRAMEWORKS & SECURITY',
+    skills: ['Spring Boot', 'Spring Security', 'Microservices', 'AES-256 Encryption', 'Authentication & Authorization'],
   },
   {
-    title: 'PROFESSIONAL SKILLS',
-    skills: ['Communication', 'Problem Solving', 'Teamwork', 'Adaptability', 'Time Management', 'Leadership'],
+    title: 'PRODUCT & ANALYTICS',
+    skills: ['KPI Frameworks', 'Data Visualization', 'Dashboard Design', 'Roadmapping', 'Competitive Analysis', 'Agile/Scrum'],
+  },
+  {
+    title: 'TOOLS',
+    skills: ['Git', 'GitHub', 'VSCode', 'Google Workspace', 'Microsoft Office 365', 'PowerBI'],
   },
 ]
 

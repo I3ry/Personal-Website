@@ -1,36 +1,39 @@
 const projects = [
   {
-    title: 'Nonprofit Website & AI Implementation',
-    subtitle: 'TECH CORPS Student WEB CORPS',
+    title: 'PlusMinus Analytics',
+    subtitle: 'Portfolio Project — Founder & Technical Lead',
     stats: [
-      { value: '50%', label: 'Engagement Increase' },
-      { value: '30%', label: 'Donor Growth' },
+      { value: '5', label: 'API Endpoints' },
+      { value: '15+', label: 'Analytics Visuals' },
+      { value: '3', label: 'Dashboards' },
     ],
     description:
-      'Designed and developed a fully functional, user-friendly website and AI for a local nonprofit, significantly improving their online presence and donor engagement.',
+      'A basketball analytics platform with RESTful APIs and a normalized relational schema, featuring interactive dashboards and data-driven player performance insights.',
     responsibilities: [
-      'Managed end-to-end project lifecycle from planning to implementation',
-      'Coordinated timelines, budgets, and client feedback',
-      'Implemented professional branding and responsive design',
+      'Designed 5 RESTful API endpoints and a normalized 7-entity relational schema with architecture diagrams and data flow documentation published as a public GitHub case study.',
+      'Built 15+ analytics visuals and 3 interactive dashboards, applying statistical analysis and KPI frameworks to surface actionable player performance insights.',
+      'Authored full PRD, competitive analysis, and go-to-market strategy anchored in data-driven market sizing and feature prioritization.',
     ],
-    tags: ['Web Development', 'AI Integration', 'Project Management'],
+    tags: ['REST APIs', 'Schema Design', 'Data Visualization', 'KPI Frameworks'],
+    date: 'Nov 2025 – Present',
   },
   {
-    title: 'Social Media Campaign Strategy',
-    subtitle: 'Benford Protection Group',
+    title: 'Medical Integration',
+    subtitle: 'HackRangers Hackathon — Backend Engineer',
     stats: [
-      { value: '50+', label: 'Positive Reviews' },
-      { value: '4', label: 'Platforms' },
+      { value: '200+', label: 'Records Protected' },
+      { value: '30+', label: 'Requests/sec' },
+      { value: '82%', label: 'NLP Accuracy' },
     ],
     description:
-      'Developed and executed a comprehensive social media strategy across multiple platforms to enhance brand visibility and customer engagement.',
+      'A secure healthcare backend built with Java/Spring Boot featuring AES-256 encryption, microservices architecture, and NLP-powered medical data processing.',
     responsibilities: [
-      'Created engaging weekly content using AI tools and design platforms',
-      'Managed LinkedIn presence with branded content',
-      'Developed promotional materials including graphics and videos',
-      'Implemented review generation strategy',
+      'Implemented Spring Security with AES-256-bit encryption and stateful session management to protect 200+ mock health records, enforcing access controls and data integrity.',
+      'Designed microservices architecture using Java/Spring Boot, isolating service boundaries and processing 30+ requests/second in real time.',
+      'Built NLP-powered backend processing 200+ unstructured medical terms with 82% accuracy, demonstrating programmatic automation of data extraction workflows.',
     ],
-    tags: ['Social Media', 'Content Creation', 'Digital Marketing', 'Canva'],
+    tags: ['Java', 'Spring Boot', 'AES-256', 'Microservices', 'NLP'],
+    date: 'Nov 2025',
   },
 ]
 
@@ -53,6 +56,7 @@ function Projects() {
               <div className="bg-gradient-to-r from-neon-blue to-neon-purple text-dark-bg p-7">
                 <h3 className="text-2xl mb-2 font-bold">{proj.title}</h3>
                 <p>{proj.subtitle}</p>
+                {proj.date && <p className="text-sm mt-1 opacity-80">{proj.date}</p>}
               </div>
               <div className="p-8">
                 <div className="flex justify-between mb-6 bg-[rgba(20,25,40,0.6)] p-5 rounded-lg border border-neon-blue/10">

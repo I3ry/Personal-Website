@@ -1,30 +1,27 @@
 const leadershipItems = [
   {
-    org: 'Google Inc.',
-    title: "Google Cloud Career Jumpstart Summer '25 HBCU Cohort",
-    items: [
-      'Selected for intensive training cohort empowering HBCU students with cloud-computing skills',
-      'Mastered core competencies in Google Cloud Platform (GCP)',
-      'Guided peers through cloud certification pathways, increasing completion rates',
-    ],
+    org: 'Google Developer Groups (GDG): NC A&T',
+    title: 'Mr. GDG',
+    date: 'Jan 2026 – Present',
+    location: 'Greensboro, NC',
   },
   {
-    org: 'NC A&T State University',
-    title: 'Aggie M.E.N – Fellowship Committee',
-    items: [
-      'Coordinated community-building events fostering connections across campus',
-      'Facilitated mentorship opportunities enhancing retention of first-year students',
-      'Advocated for mental health initiatives creating a supportive environment',
-    ],
+    org: 'National Society of Black Engineers (NSBE)',
+    title: 'Admin Zone Intern',
+    date: 'Sep 2024 – Present',
+    location: 'Greensboro, NC',
   },
   {
-    org: 'NC A&T State University',
-    title: 'National Society of Black Engineers (NSBE)',
-    items: [
-      'Active member participating in technical workshops and seminars',
-      'Collaborated on community outreach projects promoting STEM awareness',
-      'Contributed to networking initiatives with industry leaders',
-    ],
+    org: 'Leaders In Training (L.I.T)',
+    title: 'Mentor',
+    date: 'Jul 2025 – Present',
+    location: 'Greensboro, NC',
+  },
+  {
+    org: 'Aggie M.E.N.',
+    title: 'Fellowship & Programming Committee',
+    date: 'Jan 2025 – Present',
+    location: 'Greensboro, NC',
   },
 ]
 
@@ -41,19 +38,16 @@ function Leadership() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {leadershipItems.map((item) => (
             <div
               key={item.title}
               className="bg-card-bg rounded-xl p-9 transition-all duration-300 border-t-4 border-neon-green backdrop-blur-md relative overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(57,255,20,0.1)]"
             >
               <span className="text-neon-green font-semibold mb-3 block text-xl">{item.org}</span>
-              <h3 className="text-neon-blue mb-5 text-2xl">{item.title}</h3>
-              <ul className="list-arrow list-none">
-                {item.items.map((li) => (
-                  <li key={li}>{li}</li>
-                ))}
-              </ul>
+              <h3 className="text-neon-blue mb-3 text-2xl">{item.title}</h3>
+              <p className="text-neon-purple font-orbitron text-sm mb-1">{item.date}</p>
+              <p className="text-text-muted text-base">{item.location}</p>
             </div>
           ))}
         </div>
