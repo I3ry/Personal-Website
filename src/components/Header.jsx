@@ -17,7 +17,7 @@ function Header() {
     <header className="bg-[rgba(10,10,20,0.9)] backdrop-blur-md py-4 sticky top-0 z-[1000] border-b border-neon-blue/20 shadow-[0_0_20px_rgba(0,243,255,0.1)]">
       <div className="max-w-[1200px] mx-auto px-5 flex flex-col md:flex-row justify-between items-center">
         <div className="gradient-text-blue-green text-3xl tracking-wider">
-          BRYCE<span className="text-neon-green">DANCY</span>
+          BRYCE<span className="text-neon-pink">DANCY</span>
         </div>
         <nav>
           <ul className="flex flex-wrap justify-center list-none mt-4 md:mt-0 gap-4 md:gap-8">

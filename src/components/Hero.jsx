@@ -15,7 +15,7 @@ function Hero() {
             </h1>
             <p className="text-xl md:text-2xl mb-10 text-text-muted max-w-[600px] mx-auto lg:mx-0">
               Hi, I&apos;m{' '}
-              <span className="text-neon-green font-semibold" style={{ textShadow: '0 0 10px #39ff14' }}>
+              <span className="text-neon-pink font-semibold" style={{ textShadow: '0 0 10px #D71DA3' }}>
                 BRYCE DANCY
               </span>
               , a passionate Computer Science student at NC A&T State University shaping the future through technology.

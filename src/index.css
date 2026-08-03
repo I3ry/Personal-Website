@@ -6,9 +6,9 @@
   body {
     @apply font-exo bg-dark-bg text-text-light leading-relaxed overflow-x-hidden;
     background-image:
-      radial-gradient(circle at 10% 20%, rgba(11, 25, 55, 0.2) 0%, transparent 20%),
+      radial-gradient(circle at 10% 20%, rgba(215, 29, 163, 0.12) 0%, transparent 20%),
       radial-gradient(circle at 90% 80%, rgba(57, 20, 80, 0.2) 0%, transparent 20%),
-      linear-gradient(to bottom, #05050c, #0a0a14);
+      linear-gradient(to bottom, #000000, #050505);
     background-attachment: fixed;
   }
 }
@@ -42,7 +42,7 @@
   @apply w-80 h-80 rounded-full overflow-hidden relative animate-float;
   border: 3px solid theme('colors.neon-blue');
   box-shadow: 0 0 30px theme('colors.neon-blue'), inset 0 0 20px rgba(0, 243, 255, 0.3);
-  background: linear-gradient(135deg, rgba(0, 243, 255, 0.1), rgba(57, 255, 20, 0.1));
+  background: linear-gradient(135deg, rgba(0, 243, 255, 0.1), rgba(215, 29, 163, 0.1));
 }
 
 .headshot::before {
@@ -52,7 +52,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/proheadshot.jpeg') center/cover;
+  background: url('/headshot.jpeg') center/cover;
   border-radius: 50%;
 }
 
@@ -61,10 +61,30 @@
   animation: float 7s ease-in-out infinite;
 }
 
+/* About Me section photo (Lenovo) */
+.about-photo {
+  @apply w-72 h-72 rounded-full overflow-hidden relative;
+  border: 3px solid theme('colors.neon-pink');
+  box-shadow: 0 0 30px theme('colors.neon-pink'), inset 0 0 20px rgba(215, 29, 163, 0.3);
+  background: linear-gradient(135deg, rgba(215, 29, 163, 0.1), rgba(0, 243, 255, 0.1));
+  animation: float 7s ease-in-out infinite;
+}
+
+.about-photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/lenovopic.jpeg') center 15%/cover;
+  border-radius: 50%;
+}
+
 /* Gradient text utility */
 .gradient-text-blue-green {
   @apply font-orbitron font-bold;
-  background: linear-gradient(90deg, theme('colors.neon-blue'), theme('colors.neon-green'));
+  background: linear-gradient(90deg, theme('colors.neon-blue'), theme('colors.neon-pink'));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
