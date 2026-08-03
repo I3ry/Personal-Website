@@ -1,14 +1,20 @@
 const leadershipItems = [
   {
-    org: 'Google Developer Groups (GDG): NC A&T',
-    title: 'Mr. GDG',
-    date: 'Jan 2026 – Present',
+    org: 'Black Venture Capital Consortium',
+    title: 'Chapter Parliamentarian & PM Track Lead',
+    date: 'May 2026 – Present',
     location: 'Greensboro, NC',
   },
   {
-    org: 'National Society of Black Engineers (NSBE)',
-    title: 'Admin Zone Intern',
-    date: 'Sep 2024 – Present',
+    org: 'Aggie Run Club',
+    title: 'Ambassador',
+    date: 'May 2026 – Present',
+    location: 'Greensboro, NC',
+  },
+  {
+    org: 'Google Developer Groups (GDG): NC A&T',
+    title: 'Mr. GDG',
+    date: 'Jan 2026 – Present',
     location: 'Greensboro, NC',
   },
   {
@@ -21,6 +27,18 @@ const leadershipItems = [
     org: 'Aggie M.E.N.',
     title: 'Fellowship & Programming Committee',
     date: 'Jan 2025 – Present',
+    location: 'Greensboro, NC',
+  },
+  {
+    org: 'National Society of Black Engineers (NSBE)',
+    title: 'Admin Zone Intern',
+    date: 'Sep 2024 – Present',
+    location: 'Greensboro, NC',
+  },
+  {
+    org: 'Association of Computing Machinery (ACM)',
+    title: 'Active Member',
+    date: 'Sep 2024 – Present',
     location: 'Greensboro, NC',
   },
 ]
@@ -42,9 +60,9 @@ function Leadership() {
           {leadershipItems.map((item) => (
             <div
               key={item.title}
-              className="bg-card-bg rounded-xl p-9 transition-all duration-300 border-t-4 border-neon-green backdrop-blur-md relative overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(57,255,20,0.1)]"
+              className="bg-card-bg rounded-xl p-9 transition-all duration-300 border-t-4 border-neon-pink backdrop-blur-md relative overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(215,29,163,0.1)]"
             >
-              <span className="text-neon-green font-semibold mb-3 block text-xl">{item.org}</span>
+              <span className="text-neon-pink font-semibold mb-3 block text-xl">{item.org}</span>
               <h3 className="text-neon-blue mb-3 text-2xl">{item.title}</h3>
               <p className="text-neon-purple font-orbitron text-sm mb-1">{item.date}</p>
               <p className="text-text-muted text-base">{item.location}</p>

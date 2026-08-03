@@ -11,7 +11,7 @@ function Footer() {
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="max-w-[600px] mx-auto mb-10">
           <div className="gradient-text-blue-green text-4xl tracking-wider mb-6 inline-block">
-            BRYCE<span className="text-neon-green">DANCY</span>
+            BRYCE<span className="text-neon-pink">DANCY</span>
           </div>
           <p className="opacity-70 mb-7 text-lg">
             Computer Science Student | Technology Innovator | Problem Solver

@@ -7,12 +7,17 @@ const details = [
   {
     icon: 'fas fa-map-marker-alt',
     title: 'LOCATION',
-    lines: ['Chicago, IL'],
+    lines: ['Greensboro, NC'],
   },
   {
     icon: 'fas fa-envelope',
-    title: 'EMAIL',
+    title: 'SCHOOL EMAIL',
     lines: ['badancy@aggies.ncat.edu'],
+  },
+  {
+    icon: 'fas fa-envelope-open-text',
+    title: 'PERSONAL EMAIL',
+    lines: ['bryced2college@gmail.com'],
   },
   {
     icon: 'fas fa-phone',
@@ -36,7 +41,7 @@ function About() {
 
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="flex-1 flex justify-center">
-            <div className="headshot headshot-sm" />
+            <div className="about-photo" />
           </div>
           <div className="flex-[1.5]">
             <h3 className="text-2xl mb-6 text-neon-blue font-orbitron tracking-wider">
@@ -49,8 +54,9 @@ function About() {
             </p>
             <p className="mb-6 text-text-light text-lg">
               My academic journey has equipped me with both technical skills and professional competencies that I apply
-              to every project I undertake. I thrive in collaborative environments and am always eager to take on new
-              challenges.
+              to every project I undertake. From interning as a Software Voice of Customer Intern at Lenovo to
+              completing the Google Cloud Career Jumpstart, I thrive in collaborative environments and am always eager
+              to take on new challenges.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
@@ -60,7 +66,7 @@ function About() {
                   className="bg-card-bg p-7 rounded-xl card-hover relative overflow-hidden detail-card-border"
                 >
                   <i className={`${d.icon} text-4xl text-neon-blue mb-5 block`} style={{ textShadow: '0 0 15px rgba(0,243,255,0.7)' }} />
-                  <h4 className="mb-3 text-neon-green text-xl">{d.title}</h4>
+                  <h4 className="mb-3 text-neon-pink text-xl">{d.title}</h4>
                   {d.lines.map((line) => (
                     <p key={line} className="text-text-light text-lg mb-1">
                       {line}

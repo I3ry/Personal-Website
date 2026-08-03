@@ -12,6 +12,16 @@ const experiences = [
     ],
   },
   {
+    title: 'Software Voice Of Customer Intern',
+    company: 'Lenovo - Morrisville, NC',
+    date: 'Jun 2026 – Jul 2026',
+    items: [
+      'Analyzed and synthesized NPS, CSAT, OSAT, survey, and support data across Lenovo software products to identify customer pain points, sentiment trends, and product improvement opportunities, delivering actionable Voice of Customer (VoC) insights to CX and product stakeholders.',
+      'Designed a scalable customer feedback taxonomy and enhanced audience segmentation frameworks for Commercial, SMB, and Consumer users, improving insight quality, reporting accuracy, and prioritization of customer experience initiatives.',
+      'Mapped a 10-stage end-to-end customer journey and partnered with cross-functional teams to identify friction points, evaluate AI-powered customer intelligence solutions, and translate data-driven findings into recommendations for product and support strategy.',
+    ],
+  },
+  {
     title: 'Student Help Desk Technician',
     company: 'NC A&T Client Technology Services - Greensboro, NC',
     date: 'Feb 2025 – Present',
@@ -115,7 +125,7 @@ function Experience() {
                   }`}
                 >
                   <h3 className="text-neon-blue mb-2 text-xl">{exp.title}</h3>
-                  <span className="text-neon-green font-semibold mb-2 block text-lg">{exp.company}</span>
+                  <span className="text-neon-pink font-semibold mb-2 block text-lg">{exp.company}</span>
                   <span className="text-neon-purple text-base mb-5 font-orbitron block">{exp.date}</span>
                   <ul className="list-arrow list-none">
                     {exp.items.map((item) => (

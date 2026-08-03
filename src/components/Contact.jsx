@@ -1,8 +1,9 @@
 import { useState } from 'react'
 
 const contactDetails = [
-  { icon: 'fas fa-map-marker-alt', title: 'Location', value: 'Chicago, IL' },
-  { icon: 'fas fa-envelope', title: 'Email', value: 'badancy@aggies.ncat.edu' },
+  { icon: 'fas fa-map-marker-alt', title: 'Location', value: 'Greensboro, NC' },
+  { icon: 'fas fa-envelope', title: 'School Email', value: 'badancy@aggies.ncat.edu' },
+  { icon: 'fas fa-envelope-open-text', title: 'Personal Email', value: 'bryced2college@gmail.com' },
   { icon: 'fas fa-phone', title: 'Phone', value: '(312) 686-9321' },
 ]
 
@@ -48,7 +49,7 @@ function Contact() {
                     <i className={d.icon} />
                   </div>
                   <div>
-                    <h4 className="text-neon-green mb-1 text-xl">{d.title}</h4>
+                    <h4 className="text-neon-pink mb-1 text-xl">{d.title}</h4>
                     <p className="text-text-light">{d.value}</p>
                   </div>
                 </div>
@@ -73,7 +74,7 @@ function Contact() {
                 { name: 'subject', label: 'Subject', type: 'text', placeholder: 'Subject' },
               ].map((field) => (
                 <div key={field.name} className="mb-7">
-                  <label htmlFor={field.name} className="block mb-3 font-medium text-neon-green">
+                  <label htmlFor={field.name} className="block mb-3 font-medium text-neon-pink">
                     {field.label}
                   </label>
                   <input
@@ -88,7 +89,7 @@ function Contact() {
                 </div>
               ))}
               <div className="mb-7">
-                <label htmlFor="message" className="block mb-3 font-medium text-neon-green">
+                <label htmlFor="message" className="block mb-3 font-medium text-neon-pink">
                   Message
                 </label>
                 <textarea

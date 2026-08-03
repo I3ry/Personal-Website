@@ -62,7 +62,7 @@ function Projects() {
                 <div className="flex justify-between mb-6 bg-[rgba(20,25,40,0.6)] p-5 rounded-lg border border-neon-blue/10">
                   {proj.stats.map((s) => (
                     <div key={s.label} className="text-center flex-1">
-                      <div className="text-3xl font-bold text-neon-green font-orbitron" style={{ textShadow: '0 0 15px rgba(57,255,20,0.5)' }}>
+                      <div className="text-3xl font-bold text-neon-pink font-orbitron" style={{ textShadow: '0 0 15px rgba(215, 29, 163,0.5)' }}>
                         {s.value}
                       </div>
                       <div className="text-base text-text-muted">{s.label}</div>
@@ -70,7 +70,7 @@ function Projects() {
                   ))}
                 </div>
                 <p className="text-text-light text-lg mb-4">{proj.description}</p>
-                <h4 className="text-neon-green font-semibold mb-3">Key Responsibilities:</h4>
+                <h4 className="text-neon-pink font-semibold mb-3">Key Responsibilities:</h4>
                 <ul className="list-arrow list-none mb-6">
                   {proj.responsibilities.map((r) => (
                     <li key={r}>{r}</li>

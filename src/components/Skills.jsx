@@ -1,7 +1,7 @@
 const skillCategories = [
   {
     title: 'LANGUAGES',
-    skills: ['Python', 'Java', 'C++', 'JavaScript', 'SQL', 'Bash/Shell Scripting'],
+    skills: ['Python', 'Java', 'C++', 'JavaScript', 'HTML', 'CSS', 'SQL', 'Bash/Shell Scripting'],
   },
   {
     title: 'CLOUD & DATA',

@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark-bg': '#0a0a14',
-        'darker-bg': '#05050c',
-        'card-bg': 'rgba(15, 15, 30, 0.8)',
+        'dark-bg': '#000000',
+        'darker-bg': '#000000',
+        'card-bg': 'rgba(15, 15, 15, 0.8)',
         'neon-blue': '#00f3ff',
-        'neon-green': '#39ff14',
+        'neon-pink': '#D71DA3',
         'neon-purple': '#b967ff',
         'text-light': '#e0e0ff',
         'text-muted': '#a0a0c0',
@@ -22,7 +22,7 @@ export default {
       },
       boxShadow: {
         'glow-blue': '0 0 15px rgba(0, 243, 255, 0.7)',
-        'glow-green': '0 0 15px rgba(57, 255, 20, 0.5)',
+        'glow-pink': '0 0 15px rgba(215, 29, 163, 0.5)',
         'glow-blue-lg': '0 0 25px rgba(0, 243, 255, 0.7)',
         'glow-blue-xl': '0 0 30px rgba(0, 243, 255, 0.7)',
       },
